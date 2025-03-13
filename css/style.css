@@ -577,7 +577,7 @@ ul {
   font-weight: 600;
   font-size: 20px;
   padding: 10px 70px;
-  border-radius: 0px;
+  border-radius: 50px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
@@ -746,7 +746,7 @@ ul {
 /* annual-membership */
 .annual-membership {
   padding: 70px 0px;
-  background-color: #fff;
+  background-color: #fe018a;
 }
 
 .annual-membership .annual-membership-inner {
@@ -755,7 +755,7 @@ ul {
 
 .annual-membership .annual-membership-inner h2 {
   font-size: 65px;
-  color: #fe018a;
+  color: #fff;
   margin-bottom: 20px;
   font-family: Inter-Bold;
   text-transform: uppercase;
@@ -777,21 +777,25 @@ ul {
 .annual-membership .annual-membership-inner .membership-btn a {
   color: rgb(255, 255, 255);
   font-weight: 600;
-  background-color: rgb(43, 196, 61);
+  background-color: #d40067;
   font-size: 44px;
-  border-radius: 15px;
+  border-radius: 50px;
   padding: 20px 50px;
   text-transform: uppercase;
   margin-top: 40px;
 }
 
+.membership-btn2{
+  background-color: #fe018a !important;
+}
+
 .annual-membership .annual-membership-inner .membership-btn a:hover {
-  background-color: #14b327;
+  background-color: #d90074;
 }
 
 .annual-membership .annual-membership-inner h1 {
   font-family: Chocolates-Bold;
-  color: #fe018a;
+  color: #fff;
   font-size: 48px;
   text-transform: capitalize;
   margin-bottom: 0px;
@@ -960,7 +964,7 @@ ul {
   font-weight: 600;
   font-size: 20px;
   padding: 10px 30px;
-  border-radius: 10px;
+  border-radius: 50px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
