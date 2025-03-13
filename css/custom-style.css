@@ -44,10 +44,11 @@
 /* ==============================
    📌 Countdown Timer Section
 ================================= */
-/* Countdown Container */
 /* ==============================
-   📌 Countdown Timer Section
+   📌 Countdown Timer Section (Improved)
 ================================= */
+
+/* Countdown Container */
 .custom-countdown-container {
     font-family: 'Pragmatica Extended Book', Arial, sans-serif;
     text-align: center;
@@ -62,9 +63,10 @@
 
 /* Title */
 .custom-countdown-container h1 {
-    font-size: 55px;
+    font-size: 48px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    line-height: 1.3;
 }
 
 /* Countdown Timer Layout */
@@ -72,17 +74,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: bold;
     color: #000;
     gap: 15px;
+    flex-wrap: wrap; /* ✅ Ensures proper spacing on mobile */
 }
 
 /* Timer Units */
 .custom-time-unit {
-    margin: 0 10px;
     min-width: 80px;
     text-align: center;
+    display: inline-block;
 }
 
 /* Ensure seconds align with others */
@@ -95,28 +98,123 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     color: #ff3392;
     text-transform: uppercase;
-    gap: 100px;
+    gap: 80px;
 }
 
 /* Adjust Button */
 .custom-btn {
     background-color: #ff3392;
     color: white;
-    font-size: 24px;
-    padding: 15px 50px;
-    margin-top: 40px;
+    font-size: 22px;
+    padding: 14px 40px;
+    margin-top: 30px;
     border: none;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
 }
 
 .custom-btn:hover {
     background-color: #d40067;
 }
+
+/* ==============================
+   📌 Responsive Fixes (Improved)
+================================= */
+
+/* 📌 Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .custom-countdown-container {
+        max-width: 90%;
+        padding: 30px;
+    }
+
+    .custom-countdown-container h1 {
+        font-size: 38px;
+    }
+
+    .custom-countdown-timer {
+        font-size: 60px;
+        gap: 10px;
+    }
+
+    .custom-time-unit {
+        min-width: 60px;
+        font-size: 55px;
+    }
+
+    .custom-labels {
+        font-size: 16px;
+        gap: 50px;
+    }
+
+    .custom-btn {
+        font-size: 20px;
+        padding: 12px 35px;
+    }
+}
+
+/* 📌 Mobile (480px - 768px) */
+@media (max-width: 768px) {
+    .custom-countdown-container h1 {
+        font-size: 32px;
+    }
+
+    .custom-countdown-timer {
+        font-size: 50px;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .custom-time-unit {
+        min-width: 50px;
+        font-size: 45px;
+    }
+
+    .custom-labels {
+        font-size: 14px;
+        gap: 40px;
+    }
+
+    .custom-btn {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+}
+
+/* 📌 Small Mobile (Below 480px) */
+@media (max-width: 480px) {
+    .custom-countdown-container h1 {
+        font-size: 28px;
+    }
+
+    .custom-countdown-timer {
+        font-size: 40px;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .custom-time-unit {
+        min-width: 45px;
+        font-size: 38px;
+    }
+
+    .custom-labels {
+        font-size: 12px;
+        gap: 20px;
+    }
+
+    .custom-btn {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
+
 
 /* ==============================
    📌 Section That Appears After Countdown Ends
@@ -152,6 +250,7 @@
     font-weight: bold;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
+    border-radius: 50px;
 }
 
 .join-now-btn:hover {
@@ -309,6 +408,7 @@
     border: none;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 50px;
 }
 
 .membership-btn:hover {
@@ -484,6 +584,7 @@
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
+    border-radius: 50px;
 }
 
 .btn-primary:hover {

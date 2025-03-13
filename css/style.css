@@ -1289,13 +1289,9 @@ svg.icon__arrow-up {
     right: 20%;
   }
 
-  .banner-section .bg-web {
-    display: none;
-  }
+  
 
-  .banner-section .bg-mobile {
-    display: block;
-  }
+  
 
   .testimonials-box p {
     font-size: 20px;
@@ -1935,6 +1931,7 @@ svg.icon__arrow-up {
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 10px rgba(255, 0, 128, 0.3);
   border: none;
+  border-radius: 50px;
 }
 
 /* Button Hover Effect */
