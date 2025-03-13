@@ -796,7 +796,7 @@
 }
 /* Title Styling */
 .virtual-gym-title {
-    font-size: 42px;
+    font-size: 49px;
     font-weight: bold;
     color: #ff3392;
     font-family: 'Pragmatica Extended Book', Arial, sans-serif;
@@ -806,7 +806,7 @@
 
 /* Description Styling */
 .virtual-gym-description {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #333;
     font-family: 'Pragmatica Extended Book', Arial, sans-serif;
