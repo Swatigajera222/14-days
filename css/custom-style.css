@@ -1,0 +1,1016 @@
+/* ✅ Import Pragmatica Extended Book Font */
+@font-face {
+    font-family: 'Pragmatica Extended Book';
+    src: url('../fonts/fonnts.com-Pragmatica_Ext_Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ✅ Import Garet Font */
+@font-face {
+    font-family: 'Garet';
+    src: url('../fonts/Garet-Regular.woff2') format('woff2'),
+        url('../fonts/Garet-Regular.woff') format('woff'),
+        url('../fonts/Garet-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner-inner-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-inner-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Add spacing for mobile version */
+.bg-mobile {
+    margin-top: 20px;
+}
+
+/* Ensure no overlap */
+.bg-web img {
+    position: relative;
+    z-index: 1;
+}
+
+/* ==============================
+   📌 Countdown Timer Section
+================================= */
+/* Countdown Container */
+/* ==============================
+   📌 Countdown Timer Section
+================================= */
+.custom-countdown-container {
+    font-family: 'Pragmatica Extended Book', Arial, sans-serif;
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+/* Title */
+.custom-countdown-container h1 {
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Countdown Timer Layout */
+.custom-countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bold;
+    color: #000;
+    gap: 15px;
+}
+
+/* Timer Units */
+.custom-time-unit {
+    margin: 0 10px;
+    min-width: 80px;
+    text-align: center;
+}
+
+/* Ensure seconds align with others */
+.custom-seconds {
+    color: #ff3392;
+}
+
+/* Labels */
+.custom-labels {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff3392;
+    text-transform: uppercase;
+    gap: 100px;
+}
+
+/* Adjust Button */
+.custom-btn {
+    background-color: #ff3392;
+    color: white;
+    font-size: 24px;
+    padding: 15px 50px;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.custom-btn:hover {
+    background-color: #d40067;
+}
+
+/* ==============================
+   📌 Section That Appears After Countdown Ends
+================================= */
+.after-countdown-section {
+    display: none; /* Initially hidden */
+    background-color: #ff0080;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 250px;
+}
+
+/* Title */
+.after-countdown-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Join Now Button */
+.join-now-btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 24px;
+    padding: 15px 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.join-now-btn:hover {
+    background-color: #218838;
+}
+
+
+/* ==============================
+   📌 Membership Section (Background Image)
+================================= */
+/* Membership Section Background */
+.membership-section-wrapper {
+    font-family: 'Pragmatica Extended Book', Arial, sans-serif;
+    text-align: center;
+    background: url('../img/newimg/Fitness\ Website\ in\ Light\ Blue\ White\ Grey\ Clean\ Grids\ Style\ \(2\).png') no-repeat center center;
+    background-size: auto;
+    background-attachment: scroll;
+    /* margin: 50px auto; */
+    padding: 40px 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* Ensure content is on top */
+.membership-container,
+.membership-title,
+.membership-btn {
+    position: relative;
+    z-index: 2;
+}
+
+/* Title */
+.membership-title {
+    font-size: 53px;
+    font-weight: bold;
+    color: #ff3392;
+    margin-bottom: 40px;
+}
+
+/* Membership Container */
+.membership-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: nowrap;
+    max-width: 950px;
+    margin: auto;
+}
+
+/* Membership Cards */
+.membership-monthly,
+.membership-yearly {
+    background: white;
+    padding: 30px;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Garet', sans-serif;
+}
+
+/* Monthly Plan */
+.membership-monthly {
+    width: 43%;
+    border: 9px solid #c0c0c0;
+}
+
+/* Yearly Plan */
+.membership-yearly {
+    width: 57%;
+    border: 9px solid #ff3392;
+}
+
+/* Membership Headings */
+.membership-heading {
+    color: #ff3392;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Pricing Wrapper */
+.membership-price-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+/* Price */
+.membership-price {
+    font-size: 35px;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+/* Regular Price */
+.membership-regular-price {
+    font-size: 35px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.membership-regular-price span {
+    text-decoration: line-through;
+    color: #555555;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* Savings */
+.membership-save {
+    font-size: 35px;
+    color: #ff3392;
+    font-weight: bold;
+}
+
+.membership-anytime {
+    font-size: 12.5px;
+    color: #555555;
+    font-weight: bold;
+}
+
+/* ✅ Membership Yearly Highlight */
+.membership-yearly .membership-highlight {
+    background: #ffd700;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 15px;
+    display: inline-block;
+    width: auto;
+    border-radius: 50px;
+    text-align: center;
+    margin: 5px auto;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+/* Join Now Button */
+.membership-btn {
+    background-color: #ff3392;
+    color: white;
+    font-size: 24px;
+    padding: 15px 50px;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.membership-btn:hover {
+    background-color: #d40067;
+}
+
+/* ✅ Responsive Adjustments */
+
+/* 📌 Tablet View */
+@media (max-width: 1024px) {
+    .membership-container {
+        gap: 10px;
+    }
+
+    .membership-monthly,
+    .membership-yearly {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .membership-heading {
+        font-size: 30px;
+        ;
+    }
+
+    .membership-title {
+        font-size: 46px;
+    }
+
+    .membership-price-wrapper {
+        font-size: 20px !important;
+    }
+}
+
+/* 📌 Mobile View */
+@media (max-width: 768px) {
+    .membership-section-wrapper {
+        background-color: #f2f2f2;
+    }
+
+    .membership-title {
+        font-size: 40px;
+    }
+
+    .membership-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membership-monthly,
+    .membership-yearly {
+        width: 95%;
+    }
+
+    .membership-price-wrapper {
+        flex-direction: column;
+    }
+
+    .membership-btn {
+        font-size: 22px;
+        padding: 12px 40px;
+    }
+
+    .membership-price {
+        font-size: 20px;
+    }
+    .membership-heading {
+        font-size: 20px;
+    }
+    .membership-yearly .membership-highlight{
+        font-size: 20px ;
+    }
+
+}
+
+/* 📌 Small Mobile View */
+@media (max-width: 480px) {
+    .membership-section-wrapper {
+        background-color: #f2f2f2;
+    }
+    .membership-title {
+        font-size: 40px;
+    }
+
+    .membership-heading {
+        font-size: 35px;
+    }
+
+    .membership-monthly,
+    .membership-yearly {
+        width: 100%;
+        font-size: 10px;
+        padding: 20px;
+    }
+
+    .membership-price {
+        font-size: 15pz;
+    }
+
+    .membership-btn {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    .membership-price-wrapper {
+        flex-direction: column;
+    }
+    .membership-heading {
+        font-size: 25px;
+    }
+    .membership-yearly .membership-highlight{
+        font-size: 20px ;
+    }
+    .membership-regular-price{
+        font-size: 20px;
+    }
+    .membership-regular-price span{
+        font-size: 20px;
+    }
+    .membership-save{
+        font-size: 20px;
+    }
+}
+
+/* ==============================
+   📌 Workout Anywhere Anytime Section
+================================= */
+/* ✅ Workout Anywhere Anytime Section */
+.workout-anywhere-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 80px 5%;
+}
+
+/* ✅ Left Side Text Content */
+.workout-text-content {
+    font-family: 'Pragmatica Extended Book', Arial, sans-serif;
+    text-align: left;
+}
+
+.workout-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.workout-description {
+    font-size: 20px;
+    color: #323232;
+    margin-bottom: 15px;
+}
+
+/* ✅ Device Icons */
+.workout-icons {
+    margin: 20px 0;
+}
+
+.workout-icons img {
+    width: 250px;
+    max-width: 100%;
+}
+
+/* ✅ Join Now Button */
+.btn-primary {
+    background-color: #ff0080;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #d40067;
+}
+
+/* ✅ Right Side Workout Images */
+.workout-images {
+    position: relative;
+    text-align: center;
+}
+
+.workout-laptop {
+    width: 100%;
+    max-width: 900px;
+}
+
+.workout-mobile {
+    width: 30%;
+    position: absolute;
+    right: 5%;
+    bottom: -5%;
+}
+
+/* ==============================
+   📌 Responsive Design (Mobile, Tablet)
+================================= */
+@media (max-width: 1024px) {
+    .workout-title {
+        font-size: 50px;
+    }
+
+    .workout-description {
+        font-size: 18px;
+    }
+
+    .btn-primary {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+
+    .workout-laptop {
+        max-width: 700px;
+    }
+
+    .workout-mobile {
+        width: 35%;
+        right: 3%;
+        bottom: -8%;
+    }
+}
+
+@media (max-width: 768px) {
+    .workout-anywhere-section {
+        padding: 50px 5%;
+    }
+
+    .workout-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .workout-description {
+        text-align: center;
+    }
+
+    .workout-text-content {
+        text-align: center;
+    }
+
+    .workout-icons {
+        text-align: center;
+    }
+
+    .workout-laptop {
+        max-width: 500px;
+    }
+
+    .workout-mobile {
+        width: 40%;
+        right: 5%;
+        bottom: -10%;
+    }
+
+    .btn-primary {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .workout-title {
+        font-size: 36px;
+    }
+
+    .workout-description {
+        font-size: 16px;
+    }
+
+    .workout-icons img {
+        width: 180px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 10px 25px;
+        margin-bottom: 20px;
+
+    }
+
+    .workout-laptop {
+        max-width: 400px;
+    }
+
+    .workout-mobile {
+        width: 50%;
+        right: 2%;
+        bottom: -10%;
+    }
+}
+
+@media (max-width: 400px) {
+    .workout-title {
+        font-size: 32px;
+    }
+
+    .workout-description {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 8px 20px;
+        margin-bottom: 20px;
+    }
+
+    .workout-mobile {
+        width: 55%;
+        right: 0;
+        bottom: -8%;
+    }
+}
+
+/* Custom styles */
+.ab-wheel-section {
+    background: linear-gradient(to bottom, #f8f4f4, #e3c3c3);
+    padding: 60px 20px;
+}
+
+.text-content h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.text-content h2 span {
+    color: #ff0080;
+}
+
+.shop-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff0080;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 0, 128, 0.3);
+    margin-top: 15px;
+    border: none;
+}
+
+.shop-btn:hover {
+    background-color: #ff66a3;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 0, 128, 0.5);
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Virtual Gym Section */
+.virtual-gym-section {
+    width: 100%;
+    background-color: #f6f6f7;
+    padding: 50px 5%;
+}
+
+/* Header Alignment */
+.virtual-gym-header {
+    text-align: left;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+/* Title Styling */
+.virtual-gym-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ff3392;
+    font-family: 'Pragmatica Extended Book', Arial, sans-serif;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Description Styling */
+.virtual-gym-description {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Pragmatica Extended Book', Arial, sans-serif;
+    text-align: left;
+}
+
+/* Workout Images */
+.workout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Left-align images */
+    gap: 20px;
+}
+
+.workout-item {
+    width: 100%;
+    max-width: 2000px;
+}
+
+.workout-item img {
+    width: 100%;
+    /* height: 500%; */
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .virtual-gym-title {
+        font-size: 36px;
+    }
+
+    .virtual-gym-description {
+        font-size: 16px;
+    }
+
+    .workout-container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .virtual-gym-header {
+        max-width: 100%;
+    }
+
+    .virtual-gym-title {
+        font-size: 32px;
+    }
+
+    .virtual-gym-description {
+        font-size: 14px;
+    }
+
+    .workout-container {
+        align-items: center; /* Center images on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .virtual-gym-title {
+        font-size: 28px;
+    }
+
+    .virtual-gym-description {
+        font-size: 12px;
+    }
+}
+
+/* slider css */
+/* ==============================
+   📌 Custom Slider Section (Fully Responsive)
+================================= */
+
+/* Full Page Center Alignment */
+.custom-slider-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+    position: relative;
+}
+
+/* Centered Slider */
+.custom-slider-wrapper {
+    width: 1200px; /* Default for large screens */
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fix for Image Scaling */
+.custom-slide-item img {
+    filter: brightness(1) contrast(1);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make images adjust properly */
+.custom-slide-item {
+    flex-shrink: 0;
+    width: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    transform: scale(0.9);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.custom-slide-item.active {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 3;
+}
+
+/* ==============================
+   📌 Fixing Button Size for Different Screens
+================================= */
+.custom-slider-prev, .custom-slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #ff0080;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* Ensure buttons are on top */
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.custom-slider-prev:hover, .custom-slider-next:hover {
+    background-color: #e60073;
+    transform: scale(1.1);
+}
+
+/* ✅ Adjust button placement */
+.custom-slider-prev { left: 20px; }
+.custom-slider-next { right: 20px; }
+
+/* Slider Overflow */
+.custom-slider-overflow {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/* Slider List */
+.custom-slider {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Dots Navigation */
+.custom-slider-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.custom-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-dot.active {
+    background-color: #ff0080;
+}
+
+/* ==============================
+   📌 Responsive Fixes (Scaling Buttons & Images)
+================================= */
+
+/* 📌 Large Desktop Screens (Above 1400px) */
+@media (min-width: 1400px) {
+    .custom-slider-wrapper {
+        width: 1400px;
+    }
+
+    .custom-slider-prev { left: 30px; }
+    .custom-slider-next { right: 30px; }
+}
+
+/* 📌 Standard Desktop (1200px - 1400px) */
+@media (max-width: 1400px) {
+    .custom-slider-wrapper {
+        width: 1200px;
+    }
+
+    .custom-slider-prev { left: 20px; }
+    .custom-slider-next { right: 20px; }
+}
+
+/* 📌 Laptops (1024px - 1200px) */
+@media (max-width: 1200px) {
+    .custom-slider-wrapper {
+        width: 1000px;
+    }
+
+    .custom-slider-prev, .custom-slider-next {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .custom-slider-prev { left: 15px; }
+    .custom-slider-next { right: 15px; }
+
+    .custom-slide-item img {
+        transform: scale(0.95);
+    }
+}
+
+/* 📌 Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .custom-slider-wrapper {
+        width: 90%;
+    }
+
+    .custom-slider-prev, .custom-slider-next {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .custom-slider-prev { left: 10px; }
+    .custom-slider-next { right: 10px; }
+
+    .custom-slide-item img {
+        transform: scale(0.9);
+    }
+
+    .custom-slider-dots {
+        bottom: 10px;
+    }
+}
+
+/* 📌 Mobile (480px - 768px) */
+@media (max-width: 768px) {
+    .custom-slider-wrapper {
+        width: 95%;
+    }
+
+    .custom-slider-prev, .custom-slider-next {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .custom-slider-prev { left: 5px; }
+    .custom-slider-next { right: 5px; }
+
+    .custom-slide-item img {
+        transform: scale(0.85);
+    }
+
+    /* Adjust dots for better spacing */
+    .custom-slider-dots {
+        bottom: 8px;
+    }
+}
+
+/* 📌 Small Mobile (Below 480px) */
+@media (max-width: 480px) {
+    .custom-slider-wrapper {
+        width: 100%;
+    }
+
+    /* Make buttons even smaller */
+    .custom-slider-prev, .custom-slider-next {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .custom-slider-prev { left: 2px; }
+    .custom-slider-next { right: 2px; }
+
+    /* Reduce image scaling */
+    .custom-slide-item img {
+        transform: scale(0.8);
+    }
+
+    /* Adjust dot navigation */
+    .custom-slider-dots {
+        bottom: 5px;
+    }
+}
