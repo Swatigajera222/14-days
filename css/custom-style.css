@@ -878,222 +878,110 @@
 /* ==============================
    📌 Custom Slider Section (Fully Responsive)
 ================================= */
+/* ==============================
+   📌 Custom Image Section (Single Image Only)
+================================= */
 
-/* Full Page Center Alignment */
-/* .custom-slider-section {
+/* Section Styling */
+.method-section {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 50px 0;
     background-color: #f8f8f8;
     text-align: center;
-    position: relative;
-} */
+}
 
-/* Centered Slider */
-.custom-slider-wrapper {
-    width: 100%; 
-    position: relative;
-    overflow: hidden;
+/* Title Styling */
+.virtual-gym-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ff3392;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Description Styling */
+.virtual-gym-description {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Centering Image */
+.custom-image-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Fix for Image Scaling */
-/* .custom-slide-item img {
-    filter: brightness(1) contrast(1);
-    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+/* Image Adjustments */
+.custom-static-image {
+    width: 100%;
     max-width: 100%;
     height: auto;
-} */    
-
-/* Make images adjust properly */
-/* .custom-slide-item {
-    flex-shrink: 0;
-    width: 100%;
-    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
-    transform: scale(0.9);
-    opacity: 0.8;
-    z-index: 1;
-} */
-
-.custom-slide-item.active {
-    transform: scale(1);
-    opacity: 1;
-    z-index: 3;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* ==============================
-   📌 Fixing Button Size for Different Screens
+   📌 Responsive Fixes (Ensuring Proper Scaling)
 ================================= */
-
-/* Hover Effect */
-.custom-slider-prev:hover, .custom-slider-next:hover {
-    background-color: #e60073;
-    transform: scale(1.1);
-}
-
-/* ✅ Adjust button placement */
-.custom-slider-prev { left: 20px; }
-.custom-slider-next { right: 20px; }
-
-/* Slider Overflow */
-.custom-slider-overflow {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-
-/* Slider List */
-.custom-slider {
-    display: flex;
-    transition: transform 0.6s ease-in-out;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Dots Navigation */
-.custom-slider-dots {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-}
-
-.custom-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.custom-dot.active {
-    background-color: #ff0080;
-}
-
-/* ==============================
-   📌 Responsive Fixes (Scaling Buttons & Images)
-================================= */
-
-/* 📌 Large Desktop Screens (Above 1400px) */
-@media (min-width: 1400px) {
-    .custom-slider-wrapper {
-        width: 1400px;
-    }
-
-    .custom-slider-prev { left: 30px; }
-    .custom-slider-next { right: 30px; }
-}
-
-/* 📌 Standard Desktop (1200px - 1400px) */
-@media (max-width: 1400px) {
-    .custom-slider-wrapper {
-        width: 1200px;
-    }
-
-    .custom-slider-prev { left: 20px; }
-    .custom-slider-next { right: 20px; }
-}
-
-/* 📌 Laptops (1024px - 1200px) */
-@media (max-width: 1200px) {
-    .custom-slider-wrapper {
-        width: 1000px;
-    }
-
-    .custom-slider-prev, .custom-slider-next {
-        width: 45px;
-        height: 45px;
-        font-size: 20px;
-    }
-
-    .custom-slider-prev { left: 15px; }
-    .custom-slider-next { right: 15px; }
-
-    .custom-slide-item img {
-        transform: scale(0.95);
-    }
-}
 
 /* 📌 Tablets (768px - 1024px) */
 @media (max-width: 1024px) {
-    .custom-slider-wrapper {
+    .virtual-gym-title {
+        font-size: 36px;
+    }
+
+    .virtual-gym-description {
+        font-size: 16px;
+    }
+
+    .custom-image-wrapper {
         width: 90%;
-    }
-
-    .custom-slider-prev, .custom-slider-next {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-
-    .custom-slider-prev { left: 10px; }
-    .custom-slider-next { right: 10px; }
-
-    .custom-slide-item img {
-        transform: scale(0.9);
-    }
-
-    .custom-slider-dots {
-        bottom: 10px;
     }
 }
 
 /* 📌 Mobile (480px - 768px) */
 @media (max-width: 768px) {
-    .custom-slider-wrapper {
+    .virtual-gym-title {
+        font-size: 32px;
+    }
+
+    .virtual-gym-description {
+        font-size: 14px;
+    }
+
+    .custom-image-wrapper {
         width: 95%;
     }
 
-    .custom-slider-prev, .custom-slider-next {
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
-    }
-
-    .custom-slider-prev { left: 5px; }
-    .custom-slider-next { right: 5px; }
-
-    .custom-slide-item img {
-        transform: scale(0.85);
-    }
-
-    /* Adjust dots for better spacing */
-    .custom-slider-dots {
-        bottom: 8px;
+    .custom-static-image {
+        border-radius: 5px;
     }
 }
 
 /* 📌 Small Mobile (Below 480px) */
 @media (max-width: 480px) {
-    .custom-slider-wrapper {
+    .virtual-gym-title {
+        font-size: 28px;
+    }
+
+    .virtual-gym-description {
+        font-size: 12px;
+    }
+
+    .custom-image-wrapper {
         width: 100%;
     }
 
-    /* Make buttons even smaller */
-    .custom-slider-prev, .custom-slider-next {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
-
-    .custom-slider-prev { left: 2px; }
-    .custom-slider-next { right: 2px; }
-
-    /* Reduce image scaling */
-    .custom-slide-item img {
-        transform: scale(0.8);
-    }
-
-    /* Adjust dot navigation */
-    .custom-slider-dots {
-        bottom: 5px;
+    .custom-static-image {
+        border-radius: 0px;
     }
 }
