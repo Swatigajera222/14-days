@@ -552,7 +552,7 @@
 .workout-title {
     font-size: 60px;
     font-weight: bold;
-    color: #323232;
+    color: #ff3392;
     margin-bottom: 20px;
 }
 
@@ -925,5 +925,51 @@
 
     .virtual-gym-description {
         font-size: 14px;
+    }
+}
+/* ==============================
+   📌 Responsive Image Wrapper
+================================= */
+
+/* Image Container */
+.custom-image-wrapper {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Adjustments */
+.custom-static-image {
+    width: 100%;
+    max-width: 900px; /* Default size for large screens */
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* ==============================
+   📌 Responsive Fixes
+================================= */
+
+/* Tablets (Below 1024px) */
+@media (max-width: 1024px) {
+    .custom-static-image {
+        max-width: 700px; /* Reduce image size */
+    }
+}
+
+/* Mobile (Below 768px) */
+@media (max-width: 768px) {
+    .custom-static-image {
+        max-width: 90%; /* Scale for smaller screens */
+    }
+}
+
+/* Small Mobile (Below 480px) */
+@media (max-width: 480px) {
+    .custom-static-image {
+        max-width: 100%;
+        border-radius: 5px;
     }
 }
